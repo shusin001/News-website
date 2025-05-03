@@ -1,5 +1,7 @@
+/* Global styles */
 body {
   margin: 0;
+  background-color: #f5f5f0; /* Light cream-gray */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +9,160 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Navbar styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #34495e; /* Classic dark blue-gray */
+  padding: 12px;
+  color: #ecf0f1;
+  position: relative;
+}
+
+/* Nav Left Section */
+.nav-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+/* Sidebar Toggle Button */
+.sidebarBtn {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Nav Search */
+nav input {
+  width: 250px;
+  padding: 9px;
+  font-size: 18px;
+  border: none;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+nav button {
+  width: 70px;
+  height: 38px;
+  background-color: #1abc9c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  gap: 11px;
+}
+
+/* Headline */
+.head {
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  margin: 20px 0;
+}
+
+/* Card layout */
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 41px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  box-shadow: 0px 4px 4px 4px rgb(255, 255, 255);
+  background-color: white;
+  border-radius: 3px;
+  margin-top: 21px;
+  border: 1px solid rgb(236, 236, 236);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.card .title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: -7px;
+}
+
+.card .title:hover {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.card .content {
+  padding: 9px;
+}
+
+.card button {
+  background-color: rgb(29, 162, 214);
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 28px;
+  color: white;
+  font-size: 13px;
+  border-radius: 2px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #34495e;
+  transition: 0.3s ease;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  color: white;
+  background-color: #e74c3c;
+  border: none;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #3498db;
 }
