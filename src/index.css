@@ -1,29 +1,21 @@
-/* Global styles */
+/*index.css*/
+
+/* Global Styles */
 body {
   margin: 0;
-  background-color: #f5f5f0; /* Light cream-gray */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #F5F5F5; /* Muted White background */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #3E3E3E; /* Charcoal Gray text */
 }
 
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-/* Navbar styles */
+/* Navbar */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #34495e; /* Classic dark blue-gray */
+  background-color: #2A4D34; /* Deep Green */
   padding: 12px;
-  color: #ecf0f1;
-  position: relative;
+  color: #F5F5F5; /* Muted White text */
 }
 
 /* Nav Left Section */
@@ -36,8 +28,8 @@ nav {
 
 /* Sidebar Toggle Button */
 .sidebarBtn {
-  background-color: #1abc9c;
-  color: white;
+  background-color: #C49A6C; /* Gold-beige */
+  color: #1A1A1A;
   border: none;
   padding: 8px 12px;
   border-radius: 5px;
@@ -51,6 +43,8 @@ nav input {
   padding: 9px;
   font-size: 18px;
   border: none;
+  background-color: #ffffff;
+  border-radius: 4px;
 }
 
 .searchBar {
@@ -62,10 +56,10 @@ nav input {
 nav button {
   width: 70px;
   height: 38px;
-  background-color: #1abc9c;
+  background-color: #C49A6C;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: #1A1A1A;
   font-size: 16px;
   cursor: pointer;
 }
@@ -81,56 +75,89 @@ nav ul {
   font-weight: 600;
   font-size: 26px;
   margin: 20px 0;
+  color: #2A4D34; /* Deep Green */
 }
 
-/* Card layout */
+/* Card Layout */
 .cardContainer {
   display: flex;
   justify-content: center;
   gap: 41px;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 .card {
   width: 320px;
-  box-shadow: 0px 4px 4px 4px rgb(255, 255, 255);
-  background-color: white;
-  border-radius: 3px;
-  margin-top: 21px;
-  border: 1px solid rgb(236, 236, 236);
+  height: auto;
+  background-color: #F5F5F5; /* Muted White for newspaper feel */
+  border: 1px solid #C49A6C; /* Gold Accent to keep premium touch */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for paper effect */
+  border-radius: 0; /* No rounded corners */
+  padding: 20px;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+ 
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow on hover */
 }
 
 .card img {
   width: 100%;
   height: 180px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  object-fit: cover;
+  border-bottom: 1px solid #C49A6C; /* Gold Border below image */
 }
 
 .card .title {
   font-weight: 600;
-  font-size: 18px;
-  margin-top: -7px;
+  font-size: 20px;
+  color: #1D3557; /* Deep Navy Blue */
+  margin-bottom: 8px;
+  line-height: 1.4;
 }
 
 .card .title:hover {
-  border-bottom: 1px solid black;
-  cursor: pointer;
+  text-decoration: underline; /* Newspaper style hover effect */
 }
 
 .card .content {
-  padding: 9px;
+  font-family: 'Georgia', serif; /* Serif font for a more classic feel */
+  color: #3E3E3E; /* Charcoal Gray for text */
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
 .card button {
-  background-color: rgb(29, 162, 214);
+  background-color: #C49A6C; /* Gold button for premium touch */
   border: none;
   cursor: pointer;
-  width: 80px;
-  height: 28px;
-  color: white;
-  font-size: 13px;
-  border-radius: 2px;
+  width: 100%;
+  height: 40px;
+  color: #1D3557; /* Deep Navy Blue */
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card button:hover {
+  background-color: #6A4E23; /* Darker brown for hover effect */
+  color: #F5F5F5; /* Muted white text on hover */
+}
+
+/* Optional: Newspaper-Style Background Texture for Cards */
+.card {
+  background: url('C:\Users\pc\Desktop\cgpa\newss\src\n4.png'); /* Correct path to your image in the src folder */
+  background-size: cover;
+  background-blur: 5px;
 }
 
 /* Sidebar styles */
@@ -140,7 +167,7 @@ nav ul {
   left: -250px;
   width: 250px;
   height: 100%;
-  background-color: #34495e;
+  background-color: #2A4D34;
   transition: 0.3s ease;
   padding-top: 60px;
   z-index: 1000;
@@ -155,14 +182,15 @@ nav ul {
   padding: 15px;
   font-size: 18px;
   color: white;
-  background-color: #e74c3c;
+  background-color: #C0392B; /* Muted red */
   border: none;
   text-align: left;
-  border-bottom: 1px solid #ecf0f1;
+  border-bottom: 1px solid #ffffff;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .sidebar button:hover {
-  background-color: #3498db;
+  background-color: #C49A6C;
+  color: #1A1A1A;
 }

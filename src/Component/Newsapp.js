@@ -1,3 +1,5 @@
+//newsapp.js
+
 import Card from './Card';
 import React, { useEffect, useState } from 'react';
 
@@ -71,4 +73,4 @@ const Newsapp = () => {
   );
 };
 
-export default Newsapp;
+ export default Newsapp;

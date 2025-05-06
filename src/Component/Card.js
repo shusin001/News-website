@@ -1,4 +1,7 @@
+//Card.js
+
 import React from 'react'
+
  
  const Card = ({data}) => {
       console.log(data);
@@ -6,6 +9,7 @@ import React from 'react'
       const readMore = (url) =>{
          window.open(url)
       }
+      
       
    return (
      <div className='cardContainer'>
