@@ -1,3 +1,13 @@
+#first view of my project
+![Screenshot 2025-05-08 022120](https://github.com/user-attachments/assets/68aa6713-152f-4917-b806-95211054fa6d)
+# search bar searches
+![Screenshot 2025-05-08 022205](https://github.com/user-attachments/assets/ed2f2fdb-db74-4a2c-87df-4e05da3275b0)
+# redirect if you click on read_more or topic (for eg. here i click Amazon new tv stick and it redirect me to the original site)
+![Screenshot 2025-05-08 022311](https://github.com/user-attachments/assets/701b4f57-4103-4493-9bcb-0675589a47c7)
+
+
+
+
 # Trendy News App
 
 This is a responsive and user-friendly React-based news application that fetches and displays the latest news articles using the NewsAPI. It includes search functionality, a sidebar with predefined categories, and interactive cards for each news article.
